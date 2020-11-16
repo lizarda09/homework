@@ -1,0 +1,52 @@
+nav {
+    background-color: lavenderblush;
+}
+li {
+    display: inline;
+    border-right: 3px solid darkmagenta;
+}
+ul li:last-child{
+    border-right: none;
+}
+
+body {
+    background-color: antiquewhite;
+}
+nav a {
+    color: deeppink;
+    padding: 10px 20px;
+
+}
+nav a:hover {
+    color: HotPink;
+}
+
+
+ul {
+    text-align: center;
+    font-size: 25px;
+}
+
+.currentItem {
+    color: MediumVioletRed;
+    font-weight: bold;
+    font-size: 30px;
+}
+img {
+    float: left;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+article {
+    font-size: 20px;
+}
+footer {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task6</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+<nav class="nav">
+    <ul>
+        <li><a href="task1.html">Task1</a></li>
+        <li><a href="task2.html">Task2</a></li>
+        <li><a href="task3.html">Task3</a></li>
+        <li><a href="task4.html">Task4</a></li>
+        <li><a href="task5.html">Task5</a></li>
+        <li class="currentItem">Task6</li>
+    </ul>
+</nav>
+<header>
+    <h1>Hotel Booking</h1>
+</header>
+<main>
+    <form action="book.php">
+        <div id="name">
+            <label class="col1">Name</label> <input class="box" type="text"><input class="box" type="text">
+        </div>
+        <div id="email">
+            <label class="col1">E-mail</label><input class="box" type="email" size="46">
+        </div>
+        <div id="roomtype">
+            <label class="col1">Room Type</label>
+            <select class="box">
+            <option>1-room</option>
+            <option>2-room</option>
+            <option>3-room</option>
+            <option>4-room</option>
+        </select>
+        </div>
+        <div id="number">
+            <label class="col1">Number of Guests</label><input class="box" type="number" min="1">
+        </div>
+        <label class="col1">Arrival Date & Time</label>
+        <div id="arrival">
+            <input class="box" type="date">
+            <div>
+                <select class="box">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                <select class="box">
+                    <option>1</option><option>2</option><option>3</option>
+                    <option>4</option><option>5</option><option>6</option>
+                    <option>7</option><option>8</option><option>9</option>
+                    <option>10</option><option>11</option><option>12</option>
+                    <option>13</option><option>14</option><option>15</option>
+                    <option>16</option><option>17</option><option>18</option>
+                    <option>19</option><option>20</option><option>21</option>
+                    <option>22</option><option>23</option><option>24</option>
+                    <option>25</option><option>26</option><option>27</option>
+                    <option>28</option><option>29</option><option>30</option>
+                    <option>31</option><option>32</option><option>33</option>
+                    <option>34</option><option>35</option><option>36</option>
+                    <option>37</option><option>38</option><option>39</option>
+                    <option>40</option><option>41</option><option>42</option>
+                    <option>43</option><option>44</option><option>45</option>
+                    <option>46</option><option>47</option><option>48</option>
+                    <option>49</option><option>50</option><option>51</option>
+                    <option>52</option><option>53</option><option>54</option>
+                    <option>55</option><option>56</option><option>57</option>
+                    <option>58</option><option>59</option>
+                </select>
+                <select class="box">
+                    <option>AM</option>
+                    <option>PM</option>
+                </select>
+            </div>
+        </div>
+        <div id="dep">
+            <label class="col1">Departure Date</label>
+            <select class="box">
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+            <select class="box">
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option><option>6</option>
+                <option>7</option><option>8</option><option>9</option>
+                <option>10</option><option>11</option><option>12</option>
+                <option>13</option><option>14</option><option>15</option>
+                <option>16</option><option>17</option><option>18</option>
+                <option>19</option><option>20</option><option>21</option>
+                <option>22</option><option>23</option><option>24</option>
+                <option>25</option><option>26</option><option>27</option>
+                <option>28</option><option>29</option><option>30</option>
+                <option>31</option>
+            </select>
+            <select class="box">
+                <option>2020</option>
+                <option>2021</option>
+            </select>
+        </div>
+        <label class="col1">Free Pickup?</label>
+        <div id="radio">
+            <div id="pick">
+                <input class="box" type="radio" id="pick1" name="pick">
+                <input class="box" type="radio" id="pick2" name="pick">
+            </div>
+            <div>
+                <label class="pickl" for="pick1">Yes Please! - Pick me up on arrival</label><br>
+                <label class="pickl" for="pick2">No Thanks - I'll make my own way there</label>
+            </div>
+        </div>
+        <div id="flightnum">
+            <label class="col1">Flight Number</label>
+            <input class="box" type="text">
+        </div>
+        <div id="request">
+            <label class="col1">Special Requests</label>
+            <textarea class="box"></textarea>
+        </div>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</main>
+</body>
+</html>

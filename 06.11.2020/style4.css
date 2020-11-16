@@ -1,0 +1,79 @@
+
+nav li {
+    display: inline;
+    border-right: 3px solid darkmagenta;
+}
+ul li:last-child{
+    border-right: none;
+}
+nav a {
+    color: deeppink;
+    padding: 10px 20px;
+
+}
+nav a:hover {
+    color: HotPink;
+}
+
+
+ul {
+    text-align: center;
+    font-size: 25px;
+}
+
+.currentItem {
+    color: MediumVioletRed;
+    font-weight: bold;
+    font-size: 30px;
+}
+.dia {
+    height: 200px;
+    width: 80px;
+    background-color: gray;
+}
+#maindiv {
+    display: flex;
+    height: 200px;
+    align-items: flex-end;
+}
+
+#red {
+    background-color: indianred;
+    height: 70%;
+}
+#blue {
+    background-color: cornflowerblue;
+    height: 50%;
+}
+#green {
+    background-color: darkseagreen;
+    height: 30%;
+}
+#yellow {
+    background-color: darkkhaki;
+    height: 100%;
+}
+#orange {
+    background-color: burlywood;
+    height: 90%;
+}
+#sky {
+    background-color: mediumaquamarine;
+    height: 60%;
+}
+#pink {
+    background-color: plum;
+    height: 10%;
+}
+#purple {
+    background-color: mediumpurple;
+    height: 35%;
+}
+main{
+    width: 640px;
+    margin: auto;
+    padding-top: 100px;
+}
+h1 {
+    color: darkviolet;
+}
