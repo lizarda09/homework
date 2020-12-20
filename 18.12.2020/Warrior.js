@@ -22,14 +22,12 @@ class Warrior {
         drawImg(array);
         return this;
     }
-
     heal(){
         clear();
         this.health += 100;
         drawImg(array);
         return this;
     }
-
 }
 
 
