@@ -9,27 +9,27 @@
 возможностями. И напишите пример боя, используя соответствующие методы и свойства*/
 
 class Warrior {
-    constructor(name, health, power, colorWar, startPosX, startPosY) {
+    constructor(name, health, power, imgPath) {
         this.name = name;
         this.health = health;
         this.power = power;
-        this.startPosX = startPosX;
-        this.startPosY = startPosY;
-        this.colorWar = colorWar;
-        draw(this);
+        this.imgPath = imgPath;
     }
 
     hit(nameOfEnemy){
         clear();
         nameOfEnemy.health -= this.power;
-        draw(this);
-        draw(nameOfEnemy);
+        drawImg(array);
+        return this;
     }
 
     heal(){
+        clear();
         this.health += 100;
-
+        drawImg(array);
+        return this;
     }
+
 }
 
 
