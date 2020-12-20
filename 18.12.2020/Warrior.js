@@ -9,30 +9,26 @@
 возможностями. И напишите пример боя, используя соответствующие методы и свойства*/
 
 class Warrior {
-    constructor(health, power, colorWar, startPosX, startPosY) {
+    constructor(name, health, power, colorWar, startPosX, startPosY) {
+        this.name = name;
         this.health = health;
         this.power = power;
         this.startPosX = startPosX;
         this.startPosY = startPosY;
         this.colorWar = colorWar;
-        this.draw();
-    }
-
-    draw(){
-        let person = document.getElementById('battlefield');
-        let ctx = person.getContext('2d');
-        ctx.rect(this.startPosX, this.startPosY, 50, 200);
-        ctx.fillStyle = this.colorWar;
-        ctx.fill();
-        ctx.fillText("здоровье " + this.health, this.startPosX, this.startPosY);
+        draw(this);
     }
 
     hit(nameOfEnemy){
+        clear();
         nameOfEnemy.health -= this.power;
+        draw(this);
+        draw(nameOfEnemy);
     }
 
     heal(){
         this.health += 100;
+
     }
 }
 
