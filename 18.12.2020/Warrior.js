@@ -18,9 +18,13 @@ class Warrior {
 
     hit(nameOfEnemy){
         clear();
-        nameOfEnemy.health -= this.power;
-        drawImg(array);
-        return this;
+        if(nameOfEnemy.health<=0){
+            alert(this.name+' win!');
+        } else {
+            nameOfEnemy.health -= this.power;
+            drawImg(array);
+            return this;
+        }
     }
     heal(){
         clear();

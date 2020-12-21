@@ -37,6 +37,12 @@ document.addEventListener('keydown', function (event){
             array[1].hit(ironMan);
         }
     }
+    else if(event.keyCode === 72){
+        hulk.heal();
+    }
+    else if(event.keyCode === 73){
+        ironMan.heal();
+    }
 });
 
 function drawImg(arr){
@@ -50,7 +56,7 @@ function drawImg(arr){
         ctx.shadowOffsetY = 7;
         ctx.shadowBlur = 5;
     for (let i = 0; i < arr.length; i++) {
-        ctx.fillText("Здоровье " + arr[i].health, position[i].x, position[i].y);
+        ctx.fillText("Здоровье " + arr[i].health, position[i].x, position[i].y-20);
         ctx.fillText(array[i].name, position[i].x, position[i].y + position[i].h + 20);
     }
     let f1 = document.getElementById('source1');
@@ -58,6 +64,7 @@ function drawImg(arr){
     ctx.drawImage(f1, position[0].x, position[0].y, position[0].w, position[0].h);
     ctx.drawImage(f2, position[1].x, position[1].y, position[1].w, position[1].h);
 }
+
 
 /*
     ctx.fillText("Здоровье "+arr[0].health, position[0].x, position[0].y);
